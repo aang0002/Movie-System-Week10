@@ -24,6 +24,8 @@ const appRoutes: Routes = [
   { path: "deleteactor", component: DeleteactorComponent },
   { path: "deletemovie", component: DeletemovieComponent },
   { path: "", redirectTo: "/listactors", pathMatch: "full" },
+  {path: '404', component: ViewnotfoundComponent},
+  {path: '**', redirectTo: '/404'},
 ];
 
 @NgModule({
